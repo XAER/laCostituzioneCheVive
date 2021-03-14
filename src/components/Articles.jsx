@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Container, ListGroup, Modal, Button } from 'react-bootstrap'
 import { articles } from '../data/articles'
 import { Helmet } from 'react-helmet'
+import Article from './Article'
 
 const Articles = () => {
 
@@ -53,6 +54,7 @@ const Articles = () => {
                     })}
                 </ListGroup>
             </Container>
+            <Article title={data[0].title} articleText={data[1].content.text} author={data[0].author} date={data[0].date} tags={data[0].content.tags[0]} />
         </div>
         </>
     )
