@@ -1,7 +1,7 @@
 ## La Costituzione che Vive
 #### Setup della applicazione per contribuire al Development
 Per clonare la repo e contribuire allo sviluppo aprire il terminale (assicurandosi di avere installato Git sul proprio dispositivo) ed eseguire il comando: 
-###### `git clone "https://github.com/XAER/laCostituzioneCheVive.git`
+###### `git clone https://github.com/XAER/laCostituzioneCheVive.git`
 \
 \
 Prima di avviare l'applicazione in modalità sviluppo è fondamentale installare tutte le dependencies del progetto, quindi spostarsi della directory della repository clonata:
