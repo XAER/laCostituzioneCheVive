@@ -7,13 +7,19 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, IndexRoute } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import Home from './components/Home';
+import configureStore from './redux/configureStore';
+import { Provider } from 'react-redux'
+
+export const store = configureStore();
 
 ReactDOM.render(
-  <BrowserRouter>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 
