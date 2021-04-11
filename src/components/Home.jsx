@@ -1,6 +1,9 @@
 import React from 'react'
-import { Container, Carousel, Row } from 'react-bootstrap'
+import { Container, Carousel, Row, Col } from 'react-bootstrap'
 import { Helmet } from 'react-helmet';
+import brain from '../assets/images/brain.png';
+import opinion from '../assets/images/opinion.png';
+import education from '../assets/images/education.png';
 
 const Home = () => {
     return (
@@ -8,18 +11,31 @@ const Home = () => {
             <Helmet>
                 <title>Home - La costituzione che vive</title>
             </Helmet>
-            <div className="top-section">
-                <div className="left-box">
-                    <Container>
-                        IMMAGINE?
-                    </Container>
-                </div>
-                <div className="right-box">
-                    <Row>La costituzione che Vive</Row>
-                </div>
-            </div>
             <section id="center-body" className="center-body">
-                <h1>Prova</h1>
+                <h1>Il nostro obiettivo</h1>
+                <Row style={{textAlign: "center", paddingTop: "10vh"}}>
+                    <Col>   
+                        <img
+                        src={brain}
+                        style={{height: "120px"}}
+                        />
+                        <h4 className="image-section">Conoscenza</h4>
+                    </Col>
+                    <Col>   
+                        <img
+                        src={opinion}
+                        style={{height: "120px"}}
+                        />
+                        <h4 className="image-section">Opinioni</h4>
+                    </Col>
+                    <Col>   
+                        <img
+                        src={education}
+                        style={{height: "120px"}}
+                        />
+                        <h4 className="image-section">Educazione</h4>
+                    </Col>
+                </Row>
             </section>
         </>
     )
